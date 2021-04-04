@@ -16,7 +16,7 @@ export default function App() {
   };
   return (
     <NavigationContainer>
-      <View></View>
+      <RootStackScreen />
     </NavigationContainer>
   );
 }
