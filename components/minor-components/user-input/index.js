@@ -2,11 +2,11 @@ import React from "react";
 import { TextInput, Text, View } from "react-native";
 import styles from "./styles";
 
-const userInput = () => {
-  const { title, placeholder } = React.useState();
+const userInput = (props) => {
+  const { title, placeholder } = props;
 
   return (
-    <View>
+    <View style={styles.container}>
       <Text style={styles.title}>{title}</Text>
       <TextInput placeholder={placeholder} style={styles.textInput} />
     </View>

@@ -5,10 +5,16 @@ import UserInput from "../../minor-components/user-input";
 
 const login = () => {
   return (
-    <View style={styles.container}>
-      <UserInput name={"Username"} placeholder={"John Dough"} />
-      <Text>Hello</Text>
-    </View>
+    <SafeAreaView>
+      <View style={styles.container}>
+        <View style={styles.inputContainer}>
+          <UserInput title={"EMAIL:"} />
+        </View>
+        <View style={styles.inputContainer}>
+          <UserInput title={"PASSWORD:"} />
+        </View>
+      </View>
+    </SafeAreaView>
   );
 };
 
