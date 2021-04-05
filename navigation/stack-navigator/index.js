@@ -5,16 +5,14 @@ import { NavigationContainer } from "@react-navigation/native";
 import login from "../../components/screens/login";
 import signUp from "../../components/screens/sign-up";
 
-const stackNavigator = () => {
-  const Stack = createStackNavigator();
-  const stackScreen = () => {
-    <NavigationContainer>
+const Stack = createStackNavigator();
+const stackScreen = () => {
+  return (
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen name={"login"} component={login} />
       <Stack.Screen name={"signup"} component={signUp} />
-    </NavigationContainer>;
-  };
-
-  return <View></View>;
+    </Stack.Navigator>
+  );
 };
 
-export default stackNavigator;
+export default stackScreen;

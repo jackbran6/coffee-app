@@ -1,14 +1,14 @@
 import React from "react";
-import { TextInput, View } from "react-native";
+import { TextInput, Text, View } from "react-native";
 import styles from "./styles";
 
 const userInput = () => {
-  const { title, placeholder, width, height } = React.useState();
+  const { title, placeholder } = React.useState();
 
   return (
-    <View style={[styles.container, { width: width, height: height }]}>
-      <Text>{title}</Text>
-      <TextInput placeholder={placeholder} textContentType={password} />
+    <View>
+      <Text style={styles.title}>{title}</Text>
+      <TextInput placeholder={placeholder} style={styles.textInput} />
     </View>
   );
 };
