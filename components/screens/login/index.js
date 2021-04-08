@@ -1,11 +1,11 @@
 import React from "react";
-import { SafeAreaView, Text, View } from "react-native";
+import { Dimensions, SafeAreaView, Text, View } from "react-native";
 import styles from "./styles";
 import UserInput from "../../minor-components/user-input";
 
 const login = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.screen}>
       <View style={styles.container}>
         <View style={styles.inputContainer}>
           <UserInput title={"EMAIL:"} />
@@ -13,6 +13,7 @@ const login = () => {
         <View style={styles.inputContainer}>
           <UserInput title={"PASSWORD:"} />
         </View>
+        <View style={styles.inputContainer}></View>
       </View>
     </SafeAreaView>
   );
