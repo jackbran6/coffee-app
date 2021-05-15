@@ -1,8 +1,8 @@
 import React from "react";
 import { View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
-import { Home } from "../../components/screens/Home";
-import signUp from "../../components/screens/sign-up";
+import { Home } from "../../components/Screens/Home";
+import signUp from "../../components/Screens/sign-up";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 const Tabs = createBottomTabNavigator();

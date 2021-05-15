@@ -1,7 +1,7 @@
 import React from "react";
 import { Dimensions, SafeAreaView, Text, View } from "react-native";
 import styles from "./styles";
-import UserInput from "../../minor-components/user-input";
+import UserInput from "../../GenericComponents/user-input";
 
 export const Home = () => {
   return (

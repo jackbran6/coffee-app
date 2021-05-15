@@ -3,7 +3,7 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator, HeaderTitle } from "@react-navigation/stack";
-import { TabScreens } from "./navigation/tab-navigator/index";
+import { TabScreens } from "./Navigation/TabNavigation/index";
 
 const RootStack = createStackNavigator();
 const RootStackScreen = () => {
