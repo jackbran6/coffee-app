@@ -4,6 +4,7 @@ import { StyleSheet, Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator, HeaderTitle } from "@react-navigation/stack";
 import { TabScreens } from "./Navigation/TabNavigation/index";
+import { useFonts } from "expo-font";
 
 const RootStack = createStackNavigator();
 const RootStackScreen = () => {
@@ -15,6 +16,13 @@ const RootStackScreen = () => {
 };
 
 export default function App() {
+  const [loaded] = useFonts({
+    Poppins: require("./assets/fonts/Poppins-Regular.ttf"),
+  });
+
+  if (!loaded) {
+    return null;
+  }
   return (
     <NavigationContainer>
       <RootStackScreen />
