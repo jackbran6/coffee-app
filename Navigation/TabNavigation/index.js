@@ -6,6 +6,7 @@ import { Brew } from "../../components/Screens/Brew";
 import { Settings } from "../../components/Screens/Settings";
 import { Recipes } from "../../components/Screens/Recipes";
 import { Feather } from "@expo/vector-icons";
+import { MethodStack } from "../MethodStack";
 
 const Tabs = createBottomTabNavigator();
 export const TabScreens = () => {
@@ -27,8 +28,8 @@ export const TabScreens = () => {
         }}
       />
       <Tabs.Screen
-        name={"Brew"}
-        component={Brew}
+        name={"MethodStack"}
+        component={MethodStack}
         options={{
           tabBarLabel: "Brew",
           tabBarIcon: ({ color, size }) => (

@@ -1,8 +1,15 @@
 import React from "react";
-import { Dimensions, SafeAreaView, ScrollView, Text, View } from "react-native";
+import {
+  Dimensions,
+  SafeAreaView,
+  ScrollView,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import styles from "./styles";
 
-export const Brew = () => {
+export const Brew = ({ navigation }) => {
   return (
     <SafeAreaView>
       <ScrollView
@@ -13,27 +20,30 @@ export const Brew = () => {
           <Text style={styles.title}>Brew Methods</Text>
         </View>
         <View style={styles.brewCards}>
-          <View style={styles.brewMethodContainer}>
+          <TouchableOpacity
+            style={styles.brewMethodContainer}
+            onPress={() => navigation.navigate("BrewRecipe")}
+          >
             <Text style={styles.subtitle}>French Press</Text>
-          </View>
-          <View style={styles.brewMethodContainer}>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.brewMethodContainer}>
             <Text style={styles.subtitle}>AeroPress</Text>
-          </View>
-          <View style={styles.brewMethodContainer}>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.brewMethodContainer}>
             <Text style={styles.subtitle}>Cone Filter</Text>
-          </View>
-          <View style={styles.brewMethodContainer}>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.brewMethodContainer}>
             <Text style={styles.subtitle}>Filter Machine</Text>
-          </View>
-          <View style={styles.brewMethodContainer}>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.brewMethodContainer}>
             <Text style={styles.subtitle}>Chemex</Text>
-          </View>
-          <View style={styles.brewMethodContainer}>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.brewMethodContainer}>
             <Text style={styles.subtitle}>Gold Filter</Text>
-          </View>
-          <View style={styles.brewMethodContainer}>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.brewMethodContainer}>
             <Text style={styles.subtitle}>Espresso</Text>
-          </View>
+          </TouchableOpacity>
         </View>
       </ScrollView>
     </SafeAreaView>
