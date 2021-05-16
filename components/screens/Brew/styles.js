@@ -4,17 +4,19 @@ import { Dimensions } from "react-native";
 export default StyleSheet.create({
   screen: {
     backgroundColor: "#fff",
-    margin: "5%",
+    marginLeft: "5%",
+    marginRight: "5%",
     minHeight: Dimensions.get("window").height,
   },
   titleContainer: {},
   title: {
     fontFamily: "Poppins",
     fontSize: 36,
-    marginBottom: "2%",
+    marginBottom: "5%",
   },
   subtitle: {
     fontFamily: "Poppins",
+    padding: "5%",
     fontSize: 18,
   },
   brewCards: {
