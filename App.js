@@ -25,7 +25,7 @@ const RootStackScreen = () => {
 
 export default function App() {
   const [loaded] = useFonts({
-    Poppins: require("./assets/fonts/Poppins-Regular.ttf"),
+    Poppins: require("./assets/Fonts/Poppins-Regular.ttf"),
   });
 
   if (!loaded) {

@@ -12,7 +12,7 @@ export default StyleSheet.create({
     fontSize: 36,
     marginLeft: "5%",
     marginRight: "5%",
-    marginBottom: "5%",
+    marginBottom: "2%",
   },
   subtitle: {
     fontFamily: "Poppins",
