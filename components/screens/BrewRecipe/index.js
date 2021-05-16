@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
 import styles from "./styles";
 
 export const BrewRecipe = () => {
@@ -37,6 +38,9 @@ export const BrewRecipe = () => {
           <Text style={styles.subtitle}>Brew Time</Text>
           <Text style={styles.cardContent}>5 minutes</Text>
         </View>
+        <TouchableOpacity style={styles.buttonContainer}>
+          <Ionicons name="ios-add-outline" size={50} color="#d3d3d3" />
+        </TouchableOpacity>
       </ScrollView>
     </SafeAreaView>
   );
