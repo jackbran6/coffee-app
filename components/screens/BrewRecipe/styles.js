@@ -18,7 +18,6 @@ export default StyleSheet.create({
     marginRight: "5%",
     marginTop: "2.5%",
     marginBottom: "2.5%",
-
     borderColor: "#d3d3d3",
     borderRadius: 10,
     borderWidth: 1,
