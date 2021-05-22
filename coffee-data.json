@@ -1,0 +1,22 @@
+[
+{
+    "name": "French Press",
+    "recipes": [
+        { "title": "3 Cup Recipe",
+            "water": "330",
+            "coffee-dose": "20",
+            "time": "5"},
+        {"title": "8 Cup Recipe",
+            "water": "850",
+            "coffee-dose": "51",
+            "time": "5"}
+    ]  
+},
+{
+    "name": "Chemex",
+    "title": "8 Cup Recipe",
+    "water": "330",
+    "coffee-dose": "20",
+    "time": "5"
+}
+]
